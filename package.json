@@ -1,0 +1,18 @@
+{
+  "name": "learning-ganache-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "solcjs --bin --abi -o artifacts contracts/NotarizeDocument.sol",
+    "make": "node deploy-script.js",
+    "x": "node executeContract.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^1.5.2"
+  }
+}
