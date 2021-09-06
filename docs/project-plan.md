@@ -26,10 +26,30 @@ Components:
 
 | Target Date | Description |
 |--- | --- |
-| Sunday 2021-09-19 | Have a working MVP running locally ([local mvp][2]) |
+| Sunday 2021-09-19 | Have a minting MVP running locally ([minting mvp][2]) |
+| Sunday 2021-10-03 | Have a content retreival MVP running locally ([retreival mvp][3]) |
 
-### Local MVP
+### Minting MVP
+
+This MVP can be built with a few simple commands such as `git clone` and `make build`. It will do the following things.
+
+- bld: deploy a local blockchain (ganache, hardhat, geth etc.)
+- sol: complie an NFT minting smart contract (solidity)
+- bld: deploy contract to local blockchain
+- web: A UI built in Vue3 Options API will provide an interface for creator to mint an NFT
+
+In this minting MVP we will not support any auction functionality. It will also not support functionality related to retreival of content.
+
+### Retreival MVP
+
+This MVP will build on the minting MVP by supporting object retreival functionality. It will continue to support everything from the minting MVP and additionally supprot:
+
+- sol/bld: deploy auction contract to local blockchain
+- obj: retreive content stored locally over ipfs protocol
+- sol: auction functionality via smart contract
+- web: UI for users to call the retreival API
 
 
 [1]: project-brief.md "Brief"
-[2]: #local-mvp "lMVP"
+[2]: #minting-mvp "minting mvp"
+[2]: #retreival-mvp "retreival mvp"
