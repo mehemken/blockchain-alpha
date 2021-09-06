@@ -32,4 +32,4 @@ Components:
 
 
 [1]: project-brief.md "Brief"
-[2]: #local-mvp "lMVP
+[2]: #local-mvp "lMVP"
