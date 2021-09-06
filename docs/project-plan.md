@@ -52,4 +52,4 @@ This MVP will build on the minting MVP by supporting object retreival functional
 
 [1]: project-brief.md "Brief"
 [2]: #minting-mvp "minting mvp"
-[2]: #retreival-mvp "retreival mvp"
+[3]: #retreival-mvp "retreival mvp"
