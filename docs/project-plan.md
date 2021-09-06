@@ -26,10 +26,9 @@ Components:
 
 | Target Date | Description |
 |--- | --- |
-| Sunday 2021-09-19 | Have a working MVP running locally ([local mvp][2] |
+| Sunday 2021-09-19 | Have a working MVP running locally ([local mvp][2]) |
 
-<a href="local-mvp">
-### Local MVP</a>
+### Local MVP
 
 
 [1]: project-brief.md "Brief"
