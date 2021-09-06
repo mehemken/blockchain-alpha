@@ -49,3 +49,10 @@ Additionally, the creator gets a royalty fee of each subsequent sale of the NFT.
 
 * Creators on OnlyFans
 * Subscribers to content on OnlyFans
+
+## Components
+
+* HTTP site
+* Smart contract on Ethereum mainnet
+* Content storage/retreival API
+* CI/CD pipeline
