@@ -8,8 +8,8 @@ This is a running record of architectural decisions based on the method describe
 
 **Status**
 
-Accepted unilaterally on 2021-09-18 by Emilio
-Propposed on 2021-09-18 by Emilio
+Accepted unilaterally on 2021-09-18 by Emilio  
+Propposed on 2021-09-18 by Emilio  
 
 **Context**
 
