@@ -3,3 +3,12 @@ node_modules
 dist
 dist-ssr
 *.local
+ipfs
+.env
+
+#Hardhat files
+cache
+artifacts
+
+# Custom
+contract-address.txt
