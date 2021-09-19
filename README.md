@@ -13,13 +13,29 @@ This repo houses code we can share to build StripperNFT. The `code` directory ha
 
 ## Using IPFS
 
-We have our NFT metadata in JSON in the directory `hh/nft-metadata/`. This will ultimately be the NFT. It is the component of the NFT that makes it more than just a crypto hash on some account wallet. But we don't add that to the blockchain. We put that JSON in IPFS. IPFS gives us a URI and we put the URI in the blockchain. How?
+We have our NFT metadata in JSON in the directory `hh/nft-metadata/`.
+
+```
+{
+  "attributes": [
+    {
+      "trait_type": "Composition",
+      "value": "Forty percent titanium"
+    }
+  ],
+  "description": "Walk up to the club like whaddup bite my shiny metal ass.",
+  "image": "https://static.tvtropes.org/pmwiki/pub/images/bender_0.jpg",
+  "name": "Ramses"
+}
+```
+
+This will ultimately be the NFT. It is the component of the NFT that makes it more than just a crypto hash on some account wallet. But we don't add this JSON to the blockchain. We put that JSON in IPFS, then IPFS gives us a URI and we put the URI in the blockchain. How?
 
 ```
 ipfs add <filename>
 ```
 
-This will return a hash. We use that hash as a URI like so: `https://ipfs.io/ipfs/QmQmtZPELKRYoUyDWfsrN5JwFQaSFxJsHtW1PrRPwhhtR8`. (This particular URI is JSON that lives on my M1 Macbook Air and is only accessible through my local IPFS gateway. In other words, it is a dev URI that only I have access to.)
+This will return a hash. We put that hash in a URI like so: `https://ipfs.io/ipfs/QmQmtZPELKRYoUyDWfsrN5JwFQaSFxJsHtW1PrRPwhhtR8`. (This particular URI is JSON that lives on my M1 Macbook Air and is only accessible through my local IPFS gateway. In other words, it is a dev URI that only I have access to.)
 
 ## Minting an NFT
 
