@@ -35,7 +35,7 @@ This will ultimately be the NFT. It is the component of the NFT that makes it mo
 ipfs add <filename>
 ```
 
-This will return a hash. We put that hash in a URI like so: `https://ipfs.io/ipfs/QmQmtZPELKRYoUyDWfsrN5JwFQaSFxJsHtW1PrRPwhhtR8`. (This particular URI is JSON that lives on my M1 Macbook Air and is only accessible through my local IPFS gateway. In other words, it is a dev URI that only I have access to.)
+This will return a hash. We put that hash in a URI like so: `https://ipfs.io/ipfs/QmQmtZPELKRYoUyDWfsrN5JwFQaSFxJsHtW1PrRPwhhtR8`. (This particular URI is the address of some JSON that lives on my M1 Macbook Air. It is only accessible through my local IPFS gateway. In other words, it is a dev URI that only I have access to.)
 
 ## Minting an NFT
 
