@@ -11,6 +11,10 @@ This repo houses code we can share to build StripperNFT. The `code` directory ha
 
 - [IPFS binary][3]
 
+## Run a local Hardhat node
+
+Follow the instructions on the [Hardhat Quick Start guide][5].
+
 ## Using IPFS
 
 We have our NFT metadata in JSON in the directory `hh/nft-metadata/`.
@@ -82,3 +86,4 @@ f697066732f516d516d745a50454c4b52596f557944576673724e354a774651615346784a7348745
 [2]: docs/project-plan.md "Plan"
 [3]: https://docs.ipfs.io/install/command-line/#system-requirements "IPFS"
 [4]: https://hardhat.org/guides/hardhat-console.html "Hardhat console"
+[5]: https://hardhat.org/getting-started/#quick-start "Hardhat quickstart"
