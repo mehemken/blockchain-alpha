@@ -1,7 +1,9 @@
 # Blockchain Alpha
 
 **2021-09-19**  
-I've been mainly following the [Ethereum.org tutorial][7] about deploying an NFT to the Ethereum blockchain. That tutorial deploys to the Ropsten network and uses some services that abstract IPFS away. I decided to use IPFS directly so as to avoid giving these services my identifying information. It turns out it is very easy to do this directly with IPFS.
+I've been mainly following the [Ethereum.org tutorial][7] about deploying an NFT to the Ethereum blockchain. That tutorial deploys to the Ropsten network and uses some services that abstract IPFS away. I decided to use IPFS directly so as to avoid giving these services my identifying information. It turns out it is very easy to do this directly with IPFS. What I've done so far is this.
+
+![local dev environment](docs/images/dev-environment-strippernft.drawio.png)
 
 ## Project Status
 
