@@ -1,39 +1,47 @@
-# -------------------------------
+# -------------------------------------------------------
 # Local Dev Environment
 #
-#   deploy
-#     Requires that you run local_node first. Runs the hardhat deploy script. Deploys the contract onto the hardhat chain.
-#
-#   build
-#     Compiles the contracts.
-#
-#   local_node
-#     Must run in the foreground in its own terminal. Runs a local dev Hardhat blockchain.
-# -------------------------------
+# -------------------------------------------------------
+.PHONY: deploy compile hardhat ipfs init
 
-foo:
+# ----------------------------------
+# NFT
+# ----------------------------------
+
+mint_nft:
 	cd hh; \
-		npx hardhat check
+		npx hardhat run scripts/mint-nft.js
 
-deploy:
-	cd hh; \
-		npx hardhat run scripts/sample-script.js
+# ----------------------------------
+# Contract
+# ----------------------------------
 
-do:
-	cd hh; \
-		npx hardhat run scripts/do-contract.js
+contract: compile deploy_to_local_chain
 
-build:
+compile:
 	cd hh; \
 		npx hardhat compile
 
-local_node:
+deploy_to_local_chain:
+	cd hh; \
+		npx hardhat run scripts/deploy-contract-to-local-chain.js
+
+# ----------------------------------
+# Utilities (required)
+#   Run each of these in a separate terminal. These must be running for the Contract and NFT formulas to work.
+# ----------------------------------
+
+hardhat:
 	cd hh; \
 		npx hardhat node
 
-# -------------------------------
+ipfs:
+	cd ipfs; \
+		ipfs daemon
+
+# ----------------------------------
 # Install Dependencies
-# -------------------------------
+# ----------------------------------
 
 init:
 	cd hh; \
