@@ -1,6 +1,7 @@
 # Blockchain Alpha
 
-This repo houses code we can share to build StripperNFT. The `code` directory has some tutorial code. It's definitely not meant for production.
+**2021-09-19**  
+I've been mainly following the [Ethereum.org tutorial][7] about deploying an NFT to the Ethereum blockchain. That tutorial deploys to the Ropsten network and uses some services that abstract IPFS away. I decided to use IPFS directly so as to avoid giving these services my identifying information. It turns out it is very easy to do this directly with IPFS.
 
 ## Project Status
 
@@ -97,3 +98,4 @@ f697066732f516d516d745a50454c4b52596f557944576673724e354a774651615346784a7348745
 [4]: https://hardhat.org/guides/hardhat-console.html "Hardhat console"
 [5]: https://hardhat.org/getting-started/#quick-start "Hardhat quickstart"
 [6]: https://docs.ipfs.io/how-to/configure-node/#gateway "NoFetch"
+[7]: https://ethereum.org/en/developers/tutorials/how-to-write-and-deploy-an-nft "ETH NFT"
