@@ -35,6 +35,15 @@ We have our NFT metadata in JSON in the directory `hh/nft-metadata/`.
 
 This will ultimately be the NFT. It is the component of the NFT that makes it more than just a crypto hash on some account wallet. But we don't add this JSON to the blockchain. We put that JSON in IPFS, then IPFS gives us a URI and we put the URI in the blockchain. How?
 
+You will need to run a local IPFS node.
+
+```
+ipfs init
+```
+
+It might behoove you to edit the config file by setting [`Gateway.NoFetch`][6] to `false`. That way IPFS won't go putting random data on your local hard drive. Once you've done that you can do `ipfs daemon`. That will run on your local machine. It is your personal IPFS gateway. It gives you the power to add data to the InterPlanetary File System.
+
+
 ```
 ipfs add <filename>
 ```
@@ -87,3 +96,4 @@ f697066732f516d516d745a50454c4b52596f557944576673724e354a774651615346784a7348745
 [3]: https://docs.ipfs.io/install/command-line/#system-requirements "IPFS"
 [4]: https://hardhat.org/guides/hardhat-console.html "Hardhat console"
 [5]: https://hardhat.org/getting-started/#quick-start "Hardhat quickstart"
+[6]: https://docs.ipfs.io/how-to/configure-node/#gateway "NoFetch"
