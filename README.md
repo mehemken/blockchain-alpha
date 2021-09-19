@@ -5,6 +5,18 @@ I've been mainly following the [Ethereum.org tutorial][7] about deploying an NFT
 
 ![local dev environment](docs/images/dev-environment-strippernft.drawio.png)
 
+1. Deploy a Hardhat local chain
+2. Run a local IPFS daemon
+3. Compile, deploy contract to local chain
+4. Write JSON to IPFS
+5. Mint NFT
+
+Where to go from here?
+
+1. Write a Makefile that does each of the five steps above
+1. Deploy to the Ropsten network
+1. Create a local dev [retreival MVP][9]
+
 ## Project Status
 
 * [Project Brief][1]
@@ -102,3 +114,4 @@ f697066732f516d516d745a50454c4b52596f557944576673724e354a774651615346784a7348745
 [6]: https://docs.ipfs.io/how-to/configure-node/#gateway "NoFetch"
 [7]: https://ethereum.org/en/developers/tutorials/how-to-write-and-deploy-an-nft "ETH NFT"
 [8]: https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites "IPFS quickstart"
+[9]: https://github.com/mehemken/blockchain-alpha/blob/meh/dev-environment/docs/project-plan.md#retreival-mvp "Retreival MVP"
